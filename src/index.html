@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="author" content="Cerebro Cerberus" />
+    <meta name="description" content="solution to frontendmentor calculator" />
+    <link
+      rel="shortcut icon"
+      href="../images/favicon-32x32.png"
+      type="image/x-icon"
+    />
+    <link rel="stylesheet" href="./style.css" />
+    <title>Frontendmentor | Calculator</title>
+  </head>
+  <body data-theme="" class="flex-cen js-body-theme">
+    <main class="calc">
+      <header class="calc__header">
+        <h1><span>calc</span></h1>
+        <div class="calc-theme">
+          <h2><span>theme</span></h2>
+          <ul class="calc-theme__toggle js-toggle-btns">
+            <li>
+              <label for="theme1">1</label>
+              <input
+                type="radio"
+                name="theme"
+                id="theme1"
+                data-theme="default"
+              />
+            </li>
+            <li>
+              <label for="theme2">2</label>
+              <input type="radio" name="theme" id="theme2" data-theme="light" />
+            </li>
+            <li>
+              <label for="theme3">3</label>
+              <input type="radio" name="theme" id="theme3" data-theme="neon" />
+            </li>
+          </ul>
+        </div>
+      </header>
+      <div class="calc__output">
+        <p class="previousOperand" data-previous-operand></p>
+        <p class="currentOperand" data-current-operand></p>
+      </div>
+      <div class="calc__buttons">
+        <button name="button" data-number="7">7</button>
+        <button name="button" data-number="8">8</button>
+        <button name="button" data-number="9">9</button>
+        <button name="button" data-delete>DEL</button>
+        <button name="button" data-number="4">4</button>
+        <button name="button" data-number="5">5</button>
+        <button name="button" data-number="6">6</button>
+        <button name="button" data-operator>+</button>
+        <button name="button" data-number="1">1</button>
+        <button name="button" data-number="2">2</button>
+        <button name="button" data-number="3">3</button>
+        <button name="button" data-operator>-</button>
+        <button name="button" data-number>.</button>
+        <button name="button" data-number="0">0</button>
+        <button name="button" data-operator>/</button>
+        <button name="button" data-operator>x</button>
+        <button name="button" data-reset>RESET</button>
+        <button data-equal>=</button>
+      </div>
+    </main>
+    <script src="./scripts/main.js" type="module"></script>
+  </body>
+</html>
